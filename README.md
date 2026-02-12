@@ -20,7 +20,7 @@ This application demonstrates practical skills in modern web development standar
 ## Project Structure
 The repository contains the following organized structure:
 * `index.html` — The core calculator interface (Standard & Programmer modes).
-* `above.html` — Information about the project goals and developer.
+* `about.html` — Information about the project goals and developer.
 * `login.html` & `register.html` — User authentication forms.
 * `profile.html` — User profile dashboard with tabular data.
 * `privacy.html` — Legal and educational project disclosures.
