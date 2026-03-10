@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,64 +9,71 @@
     <link rel="stylesheet" href="css/site.css?v=vXvB38XIeoIdyjcK7a6u7sW9_P0dwg3NcWeVKxhVvy4" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
-<link rel="shortcut icon" href="images/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="ProCalculator" />
-<link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ProCalculator" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 </head>
+
 <body class="d-flex flex-column min-vh-100">
-    <header  class="order-0">
-        <nav  class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom border-secondary shadow-lg mb-3">
-            <div  class="container">
+    <header class="order-0">
+        <nav
+            class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom border-secondary shadow-lg mb-3">
+            <div class="container">
                 <a class="navbar-brand" href="index.html">
                     ProCalculator
                 </a>
 
-                <ul  class="navbar-nav ms-auto d-flex me-2 order-sm-3">
-                    <li  class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                <ul class="navbar-nav ms-auto d-flex me-2 order-sm-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
                             <span id="navUserName" class="text-white d-none d-sm-inline fw-bold"></span>
-                            <img id="navUserAvatar" src="images/avatar/panda.png" class="rounded-circle" width="40" height="40" style="object-fit: cover;">
+                            <img id="navUserAvatar" src="images/avatar/panda.png" class="rounded-circle" width="40"
+                                height="40" style="object-fit: cover;">
                         </a>
-                        <ul  class="dropdown-menu dropdown-menu-end shadow">
-                            <li >
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+                            <li>
                                 <a class="dropdown-item text-dark" href="profile.html">
                                     Profile
                                 </a>
                             </li>
-                            <li >
+                            <li>
                                 <a class="dropdown-item text-dark" href="login.html">
                                     Login
                                 </a>
                             </li>
-                            <li >
+                            <li>
                                 <a class="dropdown-item text-dark" href="register.html">
                                     Register
                                 </a>
                             </li>
-                            <li ><hr  class="dropdown-divider"></li>
-                            <li ><a  class="dropdown-item text-danger" href="#">Logout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
 
-                <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span  class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div  class="navbar-collapse collapse d-sm-inline-flex justify-content-between order-sm-1">
-                    <ul  class="navbar-nav flex-grow-1">
-                        <li  class="nav-item">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between order-sm-1">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Calculator</a>
                         </li>
-                        <li  class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li  class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="privacy.html">Privacy</a>
                         </li>
                     </ul>
@@ -75,67 +82,74 @@
             </div>
         </nav>
     </header>
-    
-    <main  class="flex-grow-1 order-1">
-        <div  class="container py-5">
-            
-<div class="d-flex flex-column align-items-center my-2">
-    <div class="row justify-content-center">
-        <div class="col-auto mb-4">
-            <img src="images/ultra_favicon.png" class="rounded-circle" style="max-width: 100px">
-        </div>
-        <div class="col text-center">
-            <h1 class="display-4 mt-3 mt-md-0">
-                <b>ProCalculator</b>
-            </h1>
-            <h4 class="mt-1 mt-md-0"><b>Privacy Policy</b></h4>
-        </div>
-    </div>
-</div>
 
-<div class="text-start col-md-10 mx-auto bg-white rounded-4 shadow-lg p-3 p-md-5 mb-5">
-    <h5 class="mt-0 mb-2">Project Overview</h5>
-    <p>This website is a non-commercial educational project developed as part of a Web Design laboratory assignment. The primary goal of this application is to demonstrate practical skills in using the ASP.NET Core framework and the Bootstrap CSS library.</p>
+    <main class="flex-grow-1 order-1">
+        <div class="container py-5">
 
-    <h5 class="mt-0 mb-2">Educational Status (KPI)</h5>
-    <p>The project was created by a student of the Igor Sikorsky Kyiv Polytechnic Institute (KPI). All features, including user registration and profile management, are implemented solely for academic purposes to showcase the application of modern web development standards.</p>
+            <div class="d-flex flex-column align-items-center my-2">
+                <div class="row justify-content-center">
+                    <div class="col-auto mb-4">
+                        <img src="images/ultra_favicon.png" class="rounded-circle" style="max-width: 100px">
+                    </div>
+                    <div class="col text-center">
+                        <h1 class="display-4 mt-3 mt-md-0">
+                            <b>ProCalculator</b>
+                        </h1>
+                        <h4 class="mt-1 mt-md-0"><b>Privacy Policy</b></h4>
+                    </div>
+                </div>
+            </div>
 
-    <h5 class="mt-0 mb-2">Data Collection & Usage</h5>
-    <p>As this is a static-logic educational site (CCV status), please note:</p>
-    <ul>
-        <li>
-            <b>No Real Data Needed:</b> Users are encouraged not to provide real personal information, passwords, or emails.
-        </li>
-        <li>
-            <b>Storage:</b> Any data entered into forms is used only to demonstrate the site's functionality (such as displaying a user profile table) and is not shared with third parties.
-        </li>
-        <li>
-            <b>Non-Commercial:</b> This site does not process payments, display advertisements, or track users for commercial gain.
-        </li>
-    </ul>
-</div>
+            <div class="text-start col-md-10 mx-auto bg-white rounded-4 shadow-lg p-3 p-md-5 mb-5">
+                <h5 class="mt-0 mb-2">Project Overview</h5>
+                <p>This website is a non-commercial educational project developed as part of a Web Design laboratory
+                    assignment. The primary goal of this application is to demonstrate practical skills in using the
+                    ASP.NET Core framework and the Bootstrap CSS library.</p>
+
+                <h5 class="mt-0 mb-2">Educational Status (KPI)</h5>
+                <p>The project was created by a student of the Igor Sikorsky Kyiv Polytechnic Institute (KPI). All
+                    features, including user registration and profile management, are implemented solely for academic
+                    purposes to showcase the application of modern web development standards.</p>
+
+                <h5 class="mt-0 mb-2">Data Collection & Usage</h5>
+                <p>As this is a static-logic educational site (CCV status), please note:</p>
+                <ul>
+                    <li>
+                        <b>No Real Data Needed:</b> Users are encouraged not to provide real personal information,
+                        passwords, or emails.
+                    </li>
+                    <li>
+                        <b>Storage:</b> Any data entered into forms is used only to demonstrate the site's functionality
+                        (such as displaying a user profile table) and is not shared with third parties.
+                    </li>
+                    <li>
+                        <b>Non-Commercial:</b> This site does not process payments, display advertisements, or track
+                        users for commercial gain.
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
 
-    <footer  class="order-2 py-4 py-md-5 bg-dark text-white">
-        <div  class="container text-center">
-            <div  class="row align-items-center">
-                <div  class="col-md-3 lh-base d-flex flex-column">
-                    <b >&copy; 2026 - ProCalculator</b>
+    <footer class="order-2 py-4 py-md-5 bg-dark text-white">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-md-3 lh-base d-flex flex-column">
+                    <b>&copy; 2026 - ProCalculator</b>
                     <a class="text-decoration-none" href="privacy.html"> Privacy</a>
                 </div>
-                <div  class="col-md-5 lh-base d-flex flex-column">
-                    <b >About ProCalculator</b>
-                    <p >
+                <div class="col-md-5 lh-base d-flex flex-column">
+                    <b>About ProCalculator</b>
+                    <p>
                         ProCalculator - a versatile tool for daily and advanced calculations.
                         <a class="text-decoration-none" href="about.html">Learn more</a>.
                     </p>
                 </div>
-                <div  class="col-md-4 lh-base d-flex flex-column">
-                    <b >Designed by Yehor</b>
-                    <p >
+                <div class="col-md-4 lh-base d-flex flex-column">
+                    <b>Designed by Yehor</b>
+                    <p>
                         KPI | FSSAM (123)
-                        <br >Support: egorpolykovsd@gmail.com
+                        <br>Support: egorpolykovsd@gmail.com
                     </p>
                 </div>
             </div>
@@ -145,4 +159,5 @@
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="js/navbar.js"></script>
 </body>
+
 </html>

@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const model = new CalculatorModel();
     const view = new CalculatorView();
     const controller = new CalculatorController(model, view);
-    
+
     console.log('ProCalculator MVC started!');
 });

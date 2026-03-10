@@ -2,9 +2,9 @@ export class CalculatorController {
     constructor(model, view) {
         this.model = model;
         this.view = view;
-        this.isProgrammerMode = false;  
+        this.isProgrammerMode = false;
         this.view.bindButtonClicks(this.handleInput.bind(this));
-       
+
         this.view.bindModeToggle((mode) => {
             this.isProgrammerMode = (mode === 'programmer');
             this.model.clear();
@@ -27,13 +27,13 @@ export class CalculatorController {
             this.model.compute();
         } else if (value === '%') {
             if (this.isProgrammerMode) {
-                this.model.chooseOperation('MOD'); 
+                this.model.chooseOperation('MOD');
             } else {
                 this.model.calculatePercentage();
             }
-        } else if (value === 'NOT') { 
+        } else if (value === 'NOT') {
             this.model.calculateNot();
-        } else if (['+', '-', '*', '/', 'AND', 'OR', 'XOR', '<<', '>>'].includes(value)) { 
+        } else if (['+', '-', '*', '/', 'AND', 'OR', 'XOR', '<<', '>>'].includes(value)) {
             this.model.chooseOperation(value);
         }
 
@@ -42,8 +42,8 @@ export class CalculatorController {
 
     updateView() {
         this.view.updateDisplay(
-            this.model.currentOperand, 
-            this.model.previousOperand, 
+            this.model.currentOperand,
+            this.model.previousOperand,
             this.model.operation
         );
 

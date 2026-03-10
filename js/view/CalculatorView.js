@@ -20,13 +20,13 @@ export class CalculatorView {
         window.addEventListener('resize', () => {
             if (this.programmerRadio.checked) {
                 const isMobile = window.innerWidth < 768;
-                
+
                 if (isMobile) {
                     this.calcContainer.style.maxWidth = '350px';
-                    this.calcContainer.style.maxHeight = '1200px'; 
+                    this.calcContainer.style.maxHeight = '1200px';
                 } else {
                     this.calcContainer.style.maxWidth = '680px';
-                    this.calcContainer.style.maxHeight = '650px'; 
+                    this.calcContainer.style.maxHeight = '650px';
                 }
             }
         });
@@ -39,14 +39,14 @@ export class CalculatorView {
             this.progPanelLeft.classList.remove('d-none');
             this.progPanelRight.classList.remove('d-none');
             this.progBases.classList.remove('d-none');
-            
+
             setTimeout(() => {
                 if (isMobile) {
                     this.calcContainer.style.maxWidth = '350px';
-                    this.calcContainer.style.maxHeight = '1200px'; 
+                    this.calcContainer.style.maxHeight = '1200px';
                 } else {
                     this.calcContainer.style.maxWidth = '680px';
-                    this.calcContainer.style.maxHeight = '650px'; 
+                    this.calcContainer.style.maxHeight = '650px';
                 }
             }, 10);
 
@@ -56,8 +56,8 @@ export class CalculatorView {
 
         this.standardRadio.addEventListener('change', () => {
             this.calcContainer.style.maxWidth = '350px';
-            this.calcContainer.style.maxHeight = '550px'; 
-            
+            this.calcContainer.style.maxHeight = '550px';
+
             setTimeout(() => {
                 if (this.standardRadio.checked) {
                     this.progPanelLeft.classList.add('d-none');
@@ -77,7 +77,7 @@ export class CalculatorView {
         if (/[A-F]/.test(stringNum)) return stringNum;
         if (stringNum.endsWith('.')) return stringNum;
         const parts = stringNum.split('.');
-        
+
         if ((parts.length === 2 && parts[1].length > 10) || stringNum.includes('e')) {
             return (parseFloat(stringNum).toPrecision(10) / 1).toString();
         }
@@ -94,7 +94,7 @@ export class CalculatorView {
             this.previousDisplay.innerText = previous ? this.formatNumber(previous) : '\u00A0';
         }
     }
-    
+
     updateBases(bases) {
         if (this.hexDisplay) {
             this.hexDisplay.innerText = bases.hex;
@@ -107,12 +107,12 @@ export class CalculatorView {
     bindButtonClicks(handler) {
         this.buttons.forEach(button => {
             button.addEventListener('click', () => {
-               let value = button.innerText.trim();
-                
+                let value = button.innerText.trim();
+
                 if (value === 'C' && button.classList.contains('btn-secondary')) {
                     value = 'CLEAR';
                 }
-                
+
                 handler(value);
             });
         });

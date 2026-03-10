@@ -6,7 +6,7 @@ export class AuthController {
         this.view.bindLoginSubmit(this.handleLogin.bind(this));
         this.checkUrlForErrors();
     }
-    
+
     handleRegister(userData) {
         this.view.showRegisterMessage('', true);
         if (!userData.date) {

@@ -1,7 +1,7 @@
 export class UserModel {
     constructor() {
-        this.dbName = 'proCalcUsers'; 
-        this.sessionName = 'proCalcCurrentUser'; 
+        this.dbName = 'proCalcUsers';
+        this.sessionName = 'proCalcCurrentUser';
     }
 
     getUsers() {
@@ -22,17 +22,17 @@ export class UserModel {
         if (this.findUserByEmail(userData.email)) {
             return { success: false, message: 'User with this email already exists!' };
         }
-        
+
         const users = this.getUsers();
         users.push(userData);
         this.saveUsers(users);
-        
+
         return { success: true, message: 'Registration successful!' };
     }
 
     loginUser(email, password, rememberMe) {
         const user = this.findUserByEmail(email);
-        
+
         if (!user) {
             return { success: false, message: 'User not found!' };
         }
@@ -41,7 +41,7 @@ export class UserModel {
         }
 
         if (rememberMe) {
-            localStorage.setItem(this.sessionName, JSON.stringify(user)); 
+            localStorage.setItem(this.sessionName, JSON.stringify(user));
         } else {
             sessionStorage.setItem(this.sessionName, JSON.stringify(user));
         }
@@ -52,15 +52,15 @@ export class UserModel {
         const user = localStorage.getItem(this.sessionName) || sessionStorage.getItem(this.sessionName);
         return user ? JSON.parse(user) : null;
     }
-   
+
     updateUser(email, newData) {
         let users = this.getUsers();
         let userIndex = users.findIndex(u => u.email === email);
-        
+
         if (userIndex !== -1) {
             users[userIndex] = { ...users[userIndex], ...newData, email: email };
             this.saveUsers(users);
-            
+
             if (localStorage.getItem(this.sessionName)) {
                 localStorage.setItem(this.sessionName, JSON.stringify(users[userIndex]));
             } else if (sessionStorage.getItem(this.sessionName)) {

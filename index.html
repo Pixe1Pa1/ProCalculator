@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,64 +9,71 @@
     <link rel="stylesheet" href="css/site.css?v=vXvB38XIeoIdyjcK7a6u7sW9_P0dwg3NcWeVKxhVvy4" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
-<link rel="shortcut icon" href="images/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="ProCalculator" />
-<link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ProCalculator" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 </head>
+
 <body class="d-flex flex-column min-vh-100">
-    <header  class="order-0">
-        <nav  class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom border-secondary shadow-lg mb-3">
-            <div  class="container">
+    <header class="order-0">
+        <nav
+            class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom border-secondary shadow-lg mb-3">
+            <div class="container">
                 <a class="navbar-brand" href="index.html">
                     ProCalculator
                 </a>
 
-                <ul  class="navbar-nav ms-auto d-flex me-2 order-sm-3">
-                    <li  class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                <ul class="navbar-nav ms-auto d-flex me-2 order-sm-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
                             <span id="navUserName" class="text-white d-none d-sm-inline fw-bold"></span>
-                            <img id="navUserAvatar" src="images/avatar/panda.png" class="rounded-circle" width="40" height="40" style="object-fit: cover;">
+                            <img id="navUserAvatar" src="images/avatar/panda.png" class="rounded-circle" width="40"
+                                height="40" style="object-fit: cover;">
                         </a>
-                        <ul  class="dropdown-menu dropdown-menu-end shadow">
-                            <li >
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+                            <li>
                                 <a class="dropdown-item text-dark" href="profile.html">
                                     Profile
                                 </a>
                             </li>
-                            <li >
+                            <li>
                                 <a class="dropdown-item text-dark" href="login.html">
                                     Login
                                 </a>
                             </li>
-                            <li >
+                            <li>
                                 <a class="dropdown-item text-dark" href="register.html">
                                     Register
                                 </a>
                             </li>
-                            <li ><hr  class="dropdown-divider"></li>
-                            <li ><a  class="dropdown-item text-danger" href="#">Logout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
 
-                <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span  class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div  class="navbar-collapse collapse d-sm-inline-flex justify-content-between order-sm-1">
-                    <ul  class="navbar-nav flex-grow-1">
-                        <li  class="nav-item">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between order-sm-1">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Calculator</a>
                         </li>
-                        <li  class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li  class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="privacy.html">Privacy</a>
                         </li>
                     </ul>
@@ -74,121 +82,161 @@
             </div>
         </nav>
     </header>
-    
-    <main  class="flex-grow-1 order-1">
-        <div  class="container py-5">
-            
-<div class="d-flex flex-column align-items-center my-2">
-    <div class="row justify-content-center">
-        <div class="col-auto mb-4">
-            <img src="images/ultra_favicon.png" class="rounded-circle" style="max-width: 100px">
-        </div>
-        <div class="col text-center">
-            <h1 class="display-4 mt-3 mt-md-0">
-                <b>ProCalculator</b>
-            </h1>
-            <h4 class="mt-1 mt-md-0"><b>Welcome!</b></h4>
-        </div>
-    </div>
-</div>
 
-<div class="container my-5">
-    <div id="calculator" class="mx-auto shadow-lg rounded-4 bg-dark overflow-hidden" style="max-width: 350px; max-height: 750px; transition: max-width 0.4s ease-in-out, max-height 0.4s ease-in-out;">
+    <main class="flex-grow-1 order-1">
+        <div class="container py-5">
 
-    <div class="p-3 text-white bg-dark rounded-top-4 border border-secondary">
-    <div id="prog-bases" class="d-none d-flex flex-column text-start text-muted small mb-3 font-monospace" style="word-break: break-all; gap: 4px;">
-        <div>HEX <span class="text-white ms-2">0</span></div>
-        <div>DEC <span class="text-white ms-2">0</span></div>
-        <div>OCT <span class="text-white ms-2">0</span></div>
-        <div>BIN <span class="text-white ms-2">0</span></div>
-    </div>
-    
-    <p class="text-muted small mb-0 opacity-50" style="word-break: break-all;"> 0 </p>
-    <p class="h2 mb-0" style="word-break: break-all;">0</p>
-    </div>
-
-        <div class="p-3 d-flex flex-wrap flex-md-nowrap gap-3 justify-content-center align-items-start">
-            
-            <div id="prog-panel-left" class="d-none d-grid align-content-start order-2 order-md-1 flex-shrink-0" style="grid-template-columns: repeat(2, 1fr); gap: 12px; min-width: 132px;">
-                <button class="btn btn-outline-info rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">A</button>
-                <button class="btn btn-outline-info rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">B</button>
-                <button class="btn btn-outline-info rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">C</button>
-                <button class="btn btn-outline-info rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">D</button>
-                <button class="btn btn-outline-info rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">E</button>
-                <button class="btn btn-outline-info rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">F</button>
+            <div class="d-flex flex-column align-items-center my-2">
+                <div class="row justify-content-center">
+                    <div class="col-auto mb-4">
+                        <img src="images/ultra_favicon.png" class="rounded-circle" style="max-width: 100px">
+                    </div>
+                    <div class="col text-center">
+                        <h1 class="display-4 mt-3 mt-md-0">
+                            <b>ProCalculator</b>
+                        </h1>
+                        <h4 class="mt-1 mt-md-0"><b>Welcome!</b></h4>
+                    </div>
+                </div>
             </div>
 
-            <div class="d-grid order-1 order-md-2 flex-shrink-0" style="grid-template-columns: repeat(4, 1fr); gap: 12px; min-width: 276px;">
-                <button class="btn btn-secondary rounded-circle p-0" style="width: 60px; height: 60px;">C</button>
-                <button class="btn btn-secondary rounded-circle p-0" style="width: 60px; height: 60px;">CE</button>
-                <button class="btn btn-outline-warning rounded-circle text-white p-0" style="width: 60px; height: 60px;">%</button>
-                <button class="btn btn-outline-warning rounded-circle text-white p-0" style="width: 60px; height: 60px;">/</button>
+            <div class="container my-5">
+                <div id="calculator" class="mx-auto shadow-lg rounded-4 bg-dark overflow-hidden"
+                    style="max-width: 350px; max-height: 750px; transition: max-width 0.4s ease-in-out, max-height 0.4s ease-in-out;">
 
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">7</button>
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">8</button>
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">9</button>
-                <button class="btn btn-outline-warning rounded-circle text-white p-0" style="width: 60px; height: 60px;">*</button>
+                    <div class="p-3 text-white bg-dark rounded-top-4 border border-secondary">
+                        <div id="prog-bases"
+                            class="d-none d-flex flex-column text-start text-muted small mb-3 font-monospace"
+                            style="word-break: break-all; gap: 4px;">
+                            <div>HEX <span class="text-white ms-2">0</span></div>
+                            <div>DEC <span class="text-white ms-2">0</span></div>
+                            <div>OCT <span class="text-white ms-2">0</span></div>
+                            <div>BIN <span class="text-white ms-2">0</span></div>
+                        </div>
 
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">4</button>
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">5</button>
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">6</button>
-                <button class="btn btn-outline-warning rounded-circle text-white p-0" style="width: 60px; height: 60px;">-</button>
+                        <p class="text-muted small mb-0 opacity-50" style="word-break: break-all;"> 0 </p>
+                        <p class="h2 mb-0" style="word-break: break-all;">0</p>
+                    </div>
 
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">1</button>
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">2</button>
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">3</button>
-                <button class="btn btn-outline-warning rounded-circle text-white p-0" style="width: 60px; height: 60px;">+</button>
-                
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;"> </button>
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">0</button>
-                <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">.</button>
-                <button class="btn btn-primary rounded-circle text-white p-0" style="width: 60px; height: 60px;">=</button>
+                    <div class="p-3 d-flex flex-wrap flex-md-nowrap gap-3 justify-content-center align-items-start">
+
+                        <div id="prog-panel-left"
+                            class="d-none d-grid align-content-start order-2 order-md-1 flex-shrink-0"
+                            style="grid-template-columns: repeat(2, 1fr); gap: 12px; min-width: 132px;">
+                            <button class="btn btn-outline-info rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">A</button>
+                            <button class="btn btn-outline-info rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">B</button>
+                            <button class="btn btn-outline-info rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">C</button>
+                            <button class="btn btn-outline-info rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">D</button>
+                            <button class="btn btn-outline-info rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">E</button>
+                            <button class="btn btn-outline-info rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">F</button>
+                        </div>
+
+                        <div class="d-grid order-1 order-md-2 flex-shrink-0"
+                            style="grid-template-columns: repeat(4, 1fr); gap: 12px; min-width: 276px;">
+                            <button class="btn btn-secondary rounded-circle p-0"
+                                style="width: 60px; height: 60px;">C</button>
+                            <button class="btn btn-secondary rounded-circle p-0"
+                                style="width: 60px; height: 60px;">CE</button>
+                            <button class="btn btn-outline-warning rounded-circle text-white p-0"
+                                style="width: 60px; height: 60px;">%</button>
+                            <button class="btn btn-outline-warning rounded-circle text-white p-0"
+                                style="width: 60px; height: 60px;">/</button>
+
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">7</button>
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">8</button>
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">9</button>
+                            <button class="btn btn-outline-warning rounded-circle text-white p-0"
+                                style="width: 60px; height: 60px;">*</button>
+
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">4</button>
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">5</button>
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">6</button>
+                            <button class="btn btn-outline-warning rounded-circle text-white p-0"
+                                style="width: 60px; height: 60px;">-</button>
+
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">1</button>
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">2</button>
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">3</button>
+                            <button class="btn btn-outline-warning rounded-circle text-white p-0"
+                                style="width: 60px; height: 60px;">+</button>
+
+                            <button class="btn btn-light rounded-circle p-0" style="width: 60px; height: 60px;">
+                            </button>
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">0</button>
+                            <button class="btn btn-light rounded-circle p-0"
+                                style="width: 60px; height: 60px;">.</button>
+                            <button class="btn btn-primary rounded-circle text-white p-0"
+                                style="width: 60px; height: 60px;">=</button>
+                        </div>
+
+                        <div id="prog-panel-right"
+                            class="d-none d-grid align-content-start order-3 order-md-3 flex-shrink-0"
+                            style="grid-template-columns: repeat(2, 1fr); gap: 12px; min-width: 132px;">
+                            <button class="btn btn-outline-success rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">AND</button>
+                            <button class="btn btn-outline-success rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">OR</button>
+                            <button class="btn btn-outline-success rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">XOR</button>
+                            <button class="btn btn-outline-success rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">NOT</button>
+                            <button class="btn btn-outline-success rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">&lt;&lt;</button>
+                            <button class="btn btn-outline-success rounded-circle p-0 fw-bold"
+                                style="width: 60px; height: 60px;">&gt;&gt;</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-            <div id="prog-panel-right" class="d-none d-grid align-content-start order-3 order-md-3 flex-shrink-0" style="grid-template-columns: repeat(2, 1fr); gap: 12px; min-width: 132px;">
-                <button class="btn btn-outline-success rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">AND</button>
-                <button class="btn btn-outline-success rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">OR</button>
-                <button class="btn btn-outline-success rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">XOR</button>
-                <button class="btn btn-outline-success rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">NOT</button>
-                <button class="btn btn-outline-success rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">&lt;&lt;</button>
-                <button class="btn btn-outline-success rounded-circle p-0 fw-bold" style="width: 60px; height: 60px;">&gt;&gt;</button>
+            <div class="d-flex justify-content-center my-4">
+                <div class="btn-group shadow-sm" role="group" aria-label="Calculator mode toggle">
+                    <input type="radio" class="btn-check" name="calc-type" id="standard" checked>
+                    <label class="btn btn-outline-dark px-4" for="standard">Standard</label>
+
+                    <input type="radio" class="btn-check" name="calc-type" id="programmer">
+                    <label class="btn btn-outline-dark px-4" for="programmer">Programmer</label>
+                </div>
             </div>
-
-        </div>
-    </div>
-</div>
-
-<div class="d-flex justify-content-center my-4">
-    <div class="btn-group shadow-sm" role="group" aria-label="Calculator mode toggle">
-        <input type="radio" class="btn-check" name="calc-type" id="standard" checked>
-        <label class="btn btn-outline-dark px-4" for="standard">Standard</label>
-
-        <input type="radio" class="btn-check" name="calc-type" id="programmer">
-        <label class="btn btn-outline-dark px-4" for="programmer">Programmer</label>
-    </div>
-</div>
         </div>
     </main>
 
-    <footer  class="order-2 py-4 py-md-5 bg-dark text-white">
-        <div  class="container text-center">
-            <div  class="row align-items-center">
-                <div  class="col-md-3 lh-base d-flex flex-column">
-                    <b >&copy; 2026 - ProCalculator</b>
+    <footer class="order-2 py-4 py-md-5 bg-dark text-white">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-md-3 lh-base d-flex flex-column">
+                    <b>&copy; 2026 - ProCalculator</b>
                     <a class="text-decoration-none" href="privacy.html"> Privacy</a>
                 </div>
-                <div  class="col-md-5 lh-base d-flex flex-column">
-                    <b >About ProCalculator</b>
-                    <p >
+                <div class="col-md-5 lh-base d-flex flex-column">
+                    <b>About ProCalculator</b>
+                    <p>
                         ProCalculator - a versatile tool for daily and advanced calculations.
                         <a class="text-decoration-none" href="about.html">Learn more</a>.
                     </p>
                 </div>
-                <div  class="col-md-4 lh-base d-flex flex-column">
-                    <b >Designed by Yehor</b>
-                    <p >
+                <div class="col-md-4 lh-base d-flex flex-column">
+                    <b>Designed by Yehor</b>
+                    <p>
                         KPI | FSSAM (123)
-                        <br >Support: egorpolykovsd@gmail.com
+                        <br>Support: egorpolykovsd@gmail.com
                     </p>
                 </div>
             </div>
@@ -199,4 +247,5 @@
     <script type="module" src="js/calculator.js"></script>
     <script type="module" src="js/navbar.js"></script>
 </body>
+
 </html>

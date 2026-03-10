@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,64 +9,71 @@
     <link rel="stylesheet" href="css/site.css?v=vXvB38XIeoIdyjcK7a6u7sW9_P0dwg3NcWeVKxhVvy4" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
-<link rel="shortcut icon" href="images/favicon/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
-<meta name="apple-mobile-web-app-title" content="ProCalculator" />
-<link rel="manifest" href="images/favicon/site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ProCalculator" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
 </head>
+
 <body class="d-flex flex-column min-vh-100">
-    <header  class="order-0">
-        <nav  class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom border-secondary shadow-lg mb-3">
-            <div  class="container">
+    <header class="order-0">
+        <nav
+            class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom border-secondary shadow-lg mb-3">
+            <div class="container">
                 <a class="navbar-brand" href="index.html">
                     ProCalculator
                 </a>
 
-                <ul  class="navbar-nav ms-auto d-flex me-2 order-sm-3">
-                    <li  class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+                <ul class="navbar-nav ms-auto d-flex me-2 order-sm-3">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center gap-2" data-bs-toggle="dropdown"
+                            role="button" aria-expanded="false">
                             <span id="navUserName" class="text-white d-none d-sm-inline fw-bold"></span>
-                            <img id="navUserAvatar" src="images/avatar/panda.png" class="rounded-circle" width="40" height="40" style="object-fit: cover;">
+                            <img id="navUserAvatar" src="images/avatar/panda.png" class="rounded-circle" width="40"
+                                height="40" style="object-fit: cover;">
                         </a>
-                        <ul  class="dropdown-menu dropdown-menu-end shadow">
-                            <li >
+                        <ul class="dropdown-menu dropdown-menu-end shadow">
+                            <li>
                                 <a class="dropdown-item text-dark" href="profile.html">
                                     Profile
                                 </a>
                             </li>
-                            <li >
+                            <li>
                                 <a class="dropdown-item text-dark" href="login.html">
                                     Login
                                 </a>
                             </li>
-                            <li >
+                            <li>
                                 <a class="dropdown-item text-dark" href="register.html">
                                     Register
                                 </a>
                             </li>
-                            <li ><hr  class="dropdown-divider"></li>
-                            <li ><a  class="dropdown-item text-danger" href="#">Logout</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
                         </ul>
                     </li>
                 </ul>
 
-                <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span  class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div  class="navbar-collapse collapse d-sm-inline-flex justify-content-between order-sm-1">
-                    <ul  class="navbar-nav flex-grow-1">
-                        <li  class="nav-item">
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between order-sm-1">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
                             <a class="nav-link" href="index.html">Calculator</a>
                         </li>
-                        <li  class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li  class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="privacy.html">Privacy</a>
                         </li>
                     </ul>
@@ -75,112 +82,118 @@
             </div>
         </nav>
     </header>
-    
-    <main  class="flex-grow-1 order-1">
-        <div  class="container py-5">
-            
-<div class="d-flex flex-column align-items-center my-2">
-    <h1 class="display-4 mt-3 mt-md-0">
-        <b>Welcome!</b>
-    </h1>
-    <h4 class="mt-1 mt-md-0"><b>Profile</b></h4>
 
-</div>
+    <main class="flex-grow-1 order-1">
+        <div class="container py-5">
 
-<div class="text-start mx-auto bg-white rounded-4 shadow-lg p-3 p-md-5 mb-5" style="max-width: 800px">
-   <div class="row align-items-center">
-        <div class="col-md-4 d-flex flex-column align-items-center mb-4">
-            <img id="profileAvatar" src="images/avatar/panda.png" class="rounded-circle" style="max-width: 200px; width: 200px; height: 200px; object-fit: cover;">
-            <button id="btnChangeAvatar" class="btn btn-outline-dark py-1 shadow-sm mt-2" type="button" data-bs-toggle="modal" data-bs-target="#avatarModal">
-                Change avatar
-            </button>
-        </div>
-        <div class="col">
-            <table class="table table-bordered mb-0">
-                <tr>
-                    <th class="align-middle" style="width: 35%;">Nickname</th>
-                    <td class="align-middle">
-                        <input type="text" id="profileName" class="border-0 bg-transparent w-100 p-0" style="outline: none;" value="">
-                    </td>
-                </tr>
-                <tr>
-                    <th class="align-middle">Email</th>
-                    <td id="profileEmail" class="align-middle text-muted p-2"></td>
-                </tr>
-                <tr>
-                    <th class="align-middle">Gender</th>
-                    <td class="align-middle">
-                        <select id="profileGender" class="border-0 bg-transparent w-100 p-0" style="outline: none; cursor: pointer;">
-                            <option value="Male">Male</option>
-                            <option value="Female">Female</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="align-middle">Birth date</th>
-                    <td class="align-middle">
-                        <input type="date" id="profileDate" class="border-0 bg-transparent w-100 p-0" style="outline: none;" value="">
-                    </td>
-                </tr>
-                <tr>
-                    <th class="align-middle">Password</th>
-                    <td class="align-middle">
-                        <input type="password" id="profilePassword" class="border-0 bg-transparent w-100 p-0" style="outline: none;" value="">
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-    
-    <div id="profileMessage" class="text-center fw-bold mt-3"></div>
-    
-    <div class="d-flex flex-column align-items-center">
-        <button id="btnSaveChanges" class="btn btn-dark w-100 py-2 shadow-sm mt-3" type="button">
-            Save changes
-        </button>
-    </div>
-</div>
+            <div class="d-flex flex-column align-items-center my-2">
+                <h1 class="display-4 mt-3 mt-md-0">
+                    <b>Welcome!</b>
+                </h1>
+                <h4 class="mt-1 mt-md-0"><b>Profile</b></h4>
 
-<div class="modal fade" id="avatarModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">Choose your avatar</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body text-center">
-                <div id="avatarOptions" class="d-flex justify-content-center gap-3 flex-wrap"></div>
-                <input type="hidden" id="selectedAvatar" value="panda">
+
+            <div class="text-start mx-auto bg-white rounded-4 shadow-lg p-3 p-md-5 mb-5" style="max-width: 800px">
+                <div class="row align-items-center">
+                    <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                        <img id="profileAvatar" src="images/avatar/panda.png" class="rounded-circle"
+                            style="max-width: 200px; width: 200px; height: 200px; object-fit: cover;">
+                        <button id="btnChangeAvatar" class="btn btn-outline-dark py-1 shadow-sm mt-2" type="button"
+                            data-bs-toggle="modal" data-bs-target="#avatarModal">
+                            Change avatar
+                        </button>
+                    </div>
+                    <div class="col">
+                        <table class="table table-bordered mb-0">
+                            <tr>
+                                <th class="align-middle" style="width: 35%;">Nickname</th>
+                                <td class="align-middle">
+                                    <input type="text" id="profileName" class="border-0 bg-transparent w-100 p-0"
+                                        style="outline: none;" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="align-middle">Email</th>
+                                <td id="profileEmail" class="align-middle text-muted p-2"></td>
+                            </tr>
+                            <tr>
+                                <th class="align-middle">Gender</th>
+                                <td class="align-middle">
+                                    <select id="profileGender" class="border-0 bg-transparent w-100 p-0"
+                                        style="outline: none; cursor: pointer;">
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="align-middle">Birth date</th>
+                                <td class="align-middle">
+                                    <input type="date" id="profileDate" class="border-0 bg-transparent w-100 p-0"
+                                        style="outline: none;" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="align-middle">Password</th>
+                                <td class="align-middle">
+                                    <input type="password" id="profilePassword"
+                                        class="border-0 bg-transparent w-100 p-0" style="outline: none;" value="">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="profileMessage" class="text-center fw-bold mt-3"></div>
+
+                <div class="d-flex flex-column align-items-center">
+                    <button id="btnSaveChanges" class="btn btn-dark w-100 py-2 shadow-sm mt-3" type="button">
+                        Save changes
+                    </button>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Select</button>
+
+            <div class="modal fade" id="avatarModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Choose your avatar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <div id="avatarOptions" class="d-flex justify-content-center gap-3 flex-wrap"></div>
+                            <input type="hidden" id="selectedAvatar" value="panda">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Select</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</div>
         </div>
     </main>
 
-    <footer  class="order-2 py-4 py-md-5 bg-dark text-white">
-        <div  class="container text-center">
-            <div  class="row align-items-center">
-                <div  class="col-md-3 lh-base d-flex flex-column">
-                    <b >&copy; 2026 - ProCalculator</b>
+    <footer class="order-2 py-4 py-md-5 bg-dark text-white">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-md-3 lh-base d-flex flex-column">
+                    <b>&copy; 2026 - ProCalculator</b>
                     <a class="text-decoration-none" href="privacy.html"> Privacy</a>
                 </div>
-                <div  class="col-md-5 lh-base d-flex flex-column">
-                    <b >About ProCalculator</b>
-                    <p >
+                <div class="col-md-5 lh-base d-flex flex-column">
+                    <b>About ProCalculator</b>
+                    <p>
                         ProCalculator - a versatile tool for daily and advanced calculations.
                         <a class="text-decoration-none" href="about.html">Learn more</a>.
                     </p>
                 </div>
-                <div  class="col-md-4 lh-base d-flex flex-column">
-                    <b >Designed by Yehor</b>
-                    <p >
+                <div class="col-md-4 lh-base d-flex flex-column">
+                    <b>Designed by Yehor</b>
+                    <p>
                         KPI | FSSAM (123)
-                        <br >Support: egorpolykovsd@gmail.com
+                        <br>Support: egorpolykovsd@gmail.com
                     </p>
                 </div>
             </div>
@@ -190,5 +203,6 @@
     <script src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="js/profile.js"></script>
     <script type="module" src="js/navbar.js"></script>
- </body>
+</body>
+
 </html>

@@ -4,10 +4,10 @@ export class ProfileController {
         this.view = view;
 
         this.currentUser = this.model.getCurrentUser();
-        
+
         if (!this.currentUser) {
             window.location.href = 'login.html?error=profile';
-            return; 
+            return;
         }
 
         this.view.renderUserData(this.currentUser);
@@ -23,7 +23,7 @@ export class ProfileController {
 
         const selectedDate = new Date(newData.date);
         const today = new Date();
-        
+
         if (!newData.name.trim()) {
             this.view.showMessage('Name cannot be empty!', false);
             return;
@@ -42,10 +42,10 @@ export class ProfileController {
         }
 
         const result = this.model.updateUser(this.currentUser.email, newData);
-        
+
         if (result.success) {
             this.currentUser = this.model.getCurrentUser();
-            
+
             const navName = document.getElementById('navUserName');
             if (navName) navName.textContent = this.currentUser.name;
             const navAvatar = document.getElementById('navUserAvatar');

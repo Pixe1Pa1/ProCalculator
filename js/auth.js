@@ -6,6 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const model = new UserModel();
     const view = new AuthView();
     const controller = new AuthController(model, view);
-    
+
     console.log('Auth MVC started!');
 });

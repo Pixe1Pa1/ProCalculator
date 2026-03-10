@@ -8,7 +8,7 @@ export class ProfileView {
         this.profMessage = document.getElementById('profileMessage');
         this.btnSave = document.getElementById('btnSaveChanges');
 
-        this.profileAvatar = document.getElementById('profileAvatar'); 
+        this.profileAvatar = document.getElementById('profileAvatar');
         this.avatarOptionsContainer = document.getElementById('avatarOptions');
         this.selectedAvatarInput = document.getElementById('selectedAvatar');
 
@@ -19,9 +19,9 @@ export class ProfileView {
         this.initAvatarSelection();
     }
 
-initAvatarSelection() {
-        this.avatarOptionsContainer.innerHTML = ''; 
-        
+    initAvatarSelection() {
+        this.avatarOptionsContainer.innerHTML = '';
+
         this.avatarNames.forEach(name => {
             const img = document.createElement('img');
             img.src = `images/avatar/${name}.png`;
@@ -40,7 +40,7 @@ initAvatarSelection() {
             img.addEventListener('click', () => {
                 this.avatarOptions.forEach(i => i.classList.remove('border-primary', 'border-4'));
                 img.classList.add('border-primary', 'border-4');
-                
+
                 const avatarName = img.dataset.avatar;
                 this.selectedAvatarInput.value = avatarName;
                 this.profileAvatar.src = `images/avatar/${avatarName}.png`;
@@ -59,7 +59,7 @@ initAvatarSelection() {
         const avatar = user.avatar || 'panda';
         this.selectedAvatarInput.value = avatar;
         this.profileAvatar.src = `images/avatar/${avatar}.png`;
-        
+
         this.avatarOptions.forEach(i => i.classList.remove('border-primary', 'border-4'));
         const activeImg = document.querySelector(`.avatar-option[data-avatar="${avatar}"]`);
         if (activeImg) activeImg.classList.add('border-primary', 'border-4');
