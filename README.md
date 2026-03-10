@@ -85,4 +85,4 @@ As this is a static-logic educational site created solely for academic purposes:
 
 ## Project Links
 * **Live Demo (GitHub Pages):** [GitHub Pages](https://pixe1pa1.github.io/ProCalculator/)
-* **Lab Report (Google Drive):** [Google Drive](https://docs.google.com/document/d/19mfRYjEFfmH5GDbeh8yLK7HgOdQygPiwPhT8pGdqVl0/edit?usp=sharing)
+* **Lab Report (Google Drive):** [Google Drive](https://docs.google.com/document/d/1cHq9T9UGWk0F8ZqbX_ZRrPm30WRjIlTE/edit?usp=sharing&ouid=113911140426421107228&rtpof=true&sd=true)
