@@ -1,4 +1,4 @@
-# ProCalculator | Laboratory Work #2: JavaScript Development with MVC Pattern
+# ProCalculator | Laboratory Work #2: Web application functionality development in Javascript
 **Course:** Web Design  
 **Student:** Poliakov Yehor  
 **Group:** KV-33  
