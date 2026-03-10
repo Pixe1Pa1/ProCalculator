@@ -28,38 +28,44 @@ ProCalculator is a dual-mode application (Standard & Programmer) that now featur
 
 ## Project Structure
 The project is strictly divided into three logical layers:
-    1.  **Model:** Manages data and business logic (e.g., `CalculatorModel.js` handles math, `UserModel.js` handles localStorage).
-    2.  **View:** Handles DOM manipulations and event capturing (e.g., `CalculatorView.js` updates the display).
-    3.  **Controller:** Acts as a bridge, responding to user input from the View and updating the Model (e.g., `AuthController.js`).
-The repository contains the following organized structure:
-* `js/`
-    ├── `controller/`
-    │   ├── `AuthController.js`       # Logic for Login/Register
-    │   ├── `CalculatorController.js` # Logic for Calc modes & operations
-    │   └── `ProfileController.js`    # Logic for User updates
-    ├── `model/`
-    │   ├── `CalculatorModel.js`      # Pure math & bitwise logic
-    │   └── `UserModel.js`            # LocalStorage & Session management
-    ├── `view/`
-    │   ├── `AuthView.js`             # Form handling & UI feedback
-    │   ├── `CalculatorView.js`       # Display & Button grid management
-    │   └── `ProfileView.js`          # Dynamic avatar grid & profile forms
-    ├── `auth.js`                     # Entry point for Auth pages
-    ├── `calculator.js`               # Entry point for Index page
-    ├── `profile.js`                  # Entry point for Profile page
-    └── `navbar.js`                   # Global Navbar state management
-* `index.html` — The core calculator interface (Standard & Programmer modes).
-* `about.html` — Information about the project goals and developer.
-* `login.html` & `register.html` — User authentication forms.
-* `profile.html` — User profile dashboard with tabular data.
-* `privacy.html` — Legal and educational project disclosures.
-* `css/` — Contains `site.css` with custom styles.
-* `images/`
-    ├──`avatar/` (profile pictures), 
-    ├──`favicon/` (multi-platform icons)
-    └──`ultra_favicon.png` (high resolution icon).
-* `lib/` — Third-party libraries including Bootstrap.
 
+1.  **Model:** Manages data and business logic (e.g., `CalculatorModel.js` handles math, `UserModel.js` handles localStorage).
+2.  **View:** Handles DOM manipulations and event capturing (e.g., `CalculatorView.js` updates the display).
+3.  **Controller:** Acts as a bridge, responding to user input from the View and updating the Model (e.g., `AuthController.js`).
+    
+The repository contains the following organized structure:
+```
+.
+├── index.html              # Core calculator (Standard & Programmer)
+├── about.html              # Project goals and developer info
+├── login.html              # Sign-in form
+├── register.html           # Sign-up form
+├── profile.html            # User dashboard with settings
+├── privacy.html            # Legal/Educational disclosures
+├── css/
+│   └── site.css            # Custom application styles
+├── js/
+│   ├── controller/
+│   │   ├── AuthController.js       # Auth logic & navigation
+│   │   ├── CalculatorController.js # Calculator operations & modes
+│   │   └── ProfileController.js    # Profile update management
+│   ├── model/
+│   │   ├── CalculatorModel.js      # Math logic & base conversion
+│   │   └── UserModel.js            # LocalStorage & Session data
+│   ├── view/
+│   │   ├── AuthView.js             # Form UI & error messages
+│   │   ├── CalculatorView.js       # Display & button management
+│   │   └── ProfileView.js          # Avatar grid & profile UI
+│   ├── auth.js                     # Entry point for auth pages
+│   ├── calculator.js               # Entry point for index page
+│   ├── profile.js                  # Entry point for profile page
+│   └── navbar.js                   # Global Navbar state
+├── images/
+│   ├── avatar/                     # User profile pictures
+│   ├── favicon/                    # Multi-platform icons
+│   └── ultra_favicon.png           # High-res icon
+└── lib/                            # Bootstrap & 3rd-party libs
+```
 ## Technologies Used
 * JavaScript (ES6+): Classes, Modules, Template Literals, Destructuring.
 * Storage: localStorage (persistent) and sessionStorage (session-only).
@@ -79,4 +85,4 @@ As this is a static-logic educational site created solely for academic purposes:
 
 ## Project Links
 * **Live Demo (GitHub Pages):** [GitHub Pages](https://pixe1pa1.github.io/ProCalculator/)
-* **Lab Report (Google Drive):** [Google Drive](https://docs.google.com/document/d/1ub7Dl_VVT1PXcg9QXrwfUQ0RqVkOENBkfTswM0agQf0/edit?usp=sharing)
+* **Lab Report (Google Drive):** [Google Drive](https://docs.google.com/document/d/19mfRYjEFfmH5GDbeh8yLK7HgOdQygPiwPhT8pGdqVl0/edit?usp=sharing)
