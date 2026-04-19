@@ -1,14 +1,15 @@
-# ProCalculator | Laboratory Work #3: Web application development using Javascript/VueJS
+# ProCalculator | Laboratory Work #2: Web application functionality development in Javascript
 **Course:** Web Design  
 **Student:** Poliakov Yehor  
 **Group:** KV-33  
 
 ## Assignment
-The objective of this laboratory work is to familiarize with the **Vue.js** framework and implement asynchronous client-server communication by adapting the codebase from Laboratory Work 2. The core requirements include:
-* Migrating the client-side application to the **Vue.js** framework.
-* Developing a backend server using **Node.js** and **Express.js** (or an alternative server-side framework).
-* Implementing server-side data persistence and processing using a database (e.g., **SQLite**).
-* Establishing client-server interaction and asynchronous data fetching using **Axios** or the native **Fetch API**.
+The objective of this laboratory work is to implement dynamic functionality for the previously developed static web interface. The core requirements include:
+* Using the **MVC** design pattern.
+* Organizing code into **ES6 Modules**.
+* Implementing logic without external frameworks.
+* Data persistence using **localStorage/sessionStorage**.
+* Adherence to the **Airbnb JavaScript Style Guide**.
 
 ## Project Overview
 ProCalculator is a dual-mode application (Standard & Programmer) that now features a fully functional engine. Beyond calculations, the system includes a complete User Management module (Registration, Login, Profile editing).
@@ -84,4 +85,4 @@ As this is a static-logic educational site created solely for academic purposes:
 
 ## Project Links
 * **Live Demo (GitHub Pages):** [GitHub Pages](https://pixe1pa1.github.io/ProCalculator/)
-* **Lab Report (Google Drive):** [Google Drive](https://docs.google.com/document/d/1cHq9T9UGWk0F8ZqbX_ZRrPm30WRjIlTE/edit?usp=sharing&ouid=113911140426421107228&rtpof=true&sd=true)
+* **Lab Report (Google Drive):** [Google Drive](https://docs.google.com/document/d/19mfRYjEFfmH5GDbeh8yLK7HgOdQygPiwPhT8pGdqVl0/edit?usp=sharing)
